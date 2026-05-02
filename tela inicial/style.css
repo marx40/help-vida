@@ -109,7 +109,7 @@ nav {
     
 }
 .dropbtn{
-    background-color: #ff3300;
+    background-color: #B20808;
     color: #fff;
     padding: 10px 20px;
     border:none;
@@ -119,8 +119,8 @@ nav {
     
 }
 .dropbtn:hover{
-    color:#ffd900;
-    text-shadow: 0 0 15px #ffe600;
+    color:#ffe15d;
+    text-shadow: 0 0 15px #25ff99;
     transition: 0.5s;
 }
 .dropdown-conteudo{
