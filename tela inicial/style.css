@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFF4EB;
+}
+
 nav {
     width: 100%;
     background-color: #ff3300;
@@ -55,10 +59,15 @@ nav {
     font-size: 1rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    background: #ffedcb;
+    background: #ffe4cd;
     box-shadow: 0 2px 5px #232323;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #9aff26;
+    box-shadow: 0 4px 10px #2819ff;
 }
 
 .barra {
@@ -67,7 +76,7 @@ nav {
     width: 250px;
     height: 40px;
     border-radius: 20px;
-    background-color: #ffedcb;
+    background-color: #ffedde;
     display: flex;
 }
 
@@ -79,6 +88,8 @@ nav {
     font-size: 1rem;
     padding: 10px 25px 10px 20px;
     box-shadow: 0 2px 5px #232323;
+    align-items: center;
+    position: absolute;
 }
 
 .barra i {
@@ -91,4 +102,13 @@ nav {
 
 .barra input::placeholder {
     color: #757575;
+}
+
+main {
+    background-color: #FFF4EB;
+}
+
+.container {
+    display: inline;
+    flex-wrap: wrap;;
 }
