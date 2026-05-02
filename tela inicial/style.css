@@ -8,12 +8,12 @@
 }
 
 body {
-    background-color: #FFF4EB;
+    background-color: #F8F5F1;
 }
 
 nav {
     width: 100%;
-    background-color: #ff3300;
+    background-color: #B20808;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -40,13 +40,13 @@ nav {
     position: relative;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #fff;
+    color: #F8F5F1;
     transition: 0.5s;
 }
 
 .nav-bar li a:hover {
-    color:#ffd900;
-    text-shadow: 0 0 15px #ffe600;
+    color:#ffe15d;
+    text-shadow: 0 0 15px #25ff99;
 }
 
 .btns {
@@ -56,19 +56,18 @@ nav {
 .btn{
     border-radius: 25px;
     border: none;
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    background: #ffe4cd;
-    box-shadow: 0 2px 5px #232323;
+    background: #ffedde;
+    box-shadow: 0 2px 5px hsl(0, 0%, 14%);
     cursor: pointer;
     transition: 0.5s;
     z-index: 1;
 }
 
 .btn:hover {
-    background-color: #9aff26;
-    box-shadow: 0 4px 10px #2819ff;
+    background-color: #25ff99;
 }
 
 .barra {
@@ -156,7 +155,9 @@ main {
     background-color: #FFF4EB;
 }
 
+
 .container {
     display: inline;
     flex-wrap: wrap;
 }
+
