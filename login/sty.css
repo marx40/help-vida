@@ -17,25 +17,32 @@ body {
 
 
 .container {
-    width: 400px;
+    width: 900px;
     height: 500px;
     position: relative;
     background-color: #cc2222b4;
     border-radius: 15px;
-    padding: 5em;
+    padding: 4em;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to left, #F5F5DC 50%, #BC4639 50%);
 }
 
 .container h1{
     margin-bottom: 50px;
+    color:#c92b19;
 }
 
 .form-login {
     position: absolute;
+    right: 0;
+    width: 50%;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
+    box-sizing: border-box;
+    
 }
 
 .input-box {
@@ -68,8 +75,12 @@ body {
 }
 
 .forgot-pass {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.create-account{
+   
+    margin-bottom: 40px;
 }
 
 button {
@@ -82,11 +93,11 @@ button {
     font-size: 16px;
     font-weight: 500;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    background-color: #4472f1;
+    background-color: #79a128e3;
 }
 
 button:hover {
-    background-color: #3e64e0;
+    background-color:#6e902ae7;
     transition: 1s;
-    box-shadow: 0 0 15px rgba(0, 26, 255, 0.7);
+    box-shadow: 0 0 15px #668821;
 }
