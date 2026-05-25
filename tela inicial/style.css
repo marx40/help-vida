@@ -69,7 +69,23 @@ nav {
     border-radius: 6px;
     height: 40px;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: #B20808;
+    box-shadow: 0 2px 5px hsl(0, 0%, 14%);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    color: white;
+    
+}
+.btn1{
+    margin-top: 20px;
+    border-radius: 6px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
     font-weight: 500;
     padding: 0.5rem 1rem;
     background: #B20808;
@@ -98,3 +114,37 @@ main {
     flex-wrap: wrap;
 }
 
+span{
+    color: #B20808;
+}
+
+.conteudo{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.conteudo p{
+    margin-top: 20px;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.card1 {
+    border-right-style: solid;
+    margin: 10px;
+    padding: 10px;
+    border-right-width: 2px;
+    border-right-color: #afafaf6c;
+}
+
+#p1{
+    font-weight: bolder;
+}
+
+#p2{
+    margin-top: 10px;
+}
