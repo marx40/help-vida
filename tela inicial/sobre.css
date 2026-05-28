@@ -63,7 +63,7 @@ body{
             padding: 12px 25px;
             border-radius: 6px;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: 0.3s;
         }
 
         .btn-voltar:hover {
