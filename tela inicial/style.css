@@ -15,57 +15,41 @@ body {
 header{
     width: 100%;
     background-color: #fff;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px 8%;
     position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 100px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+   
 }
 
 
 .logo {
-    color: #B20808;
-    font-size: 28px;
+    color: #D90429;
+    font-size: 22px;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
+    
 }
 
 nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
-.nav-bar {
+.items {
     list-style: none;
     display: flex;
-    gap: 2rem;
-    flex-direction: row;
+    gap: 25px;
+    
 }
 
-.nav-bar ul li  {
-    display: inline-block;
-    list-style: none;
-    justify-content: space-between;
+.items a {
     text-decoration: none;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    color: black;
+    color: #1f1f1f;
     transition: 0.5s;
-    margin-right: 1rem;
+    
 }
 
-.items {
-    gap: 5rem;
-}
-
-
-.nav-bar ul a:hover {
+.items a:hover {
     color: #e90404;
     border-bottom-style: solid;
     border-color: #B20808;
@@ -73,45 +57,40 @@ nav{
 
 .btns {
     display: flex;
+    gap:15px;
+
 }
 
-.btn{
-    border-radius: 6px;
+.btn-emergencia{
+    border-radius: 8px;
     height: 40px;
-    border: none;
-    font-size: 14px;
-    font-weight: 500;
     padding: 0.5rem 1rem;
-    background: #B20808;
+    background: #D90429;
     box-shadow: 0 2px 5px hsl(0, 0%, 14%);
     cursor: pointer;
-    transition: 0.5s;
-    z-index: 1;
     color: white;
+    text-decoration: none;
     
 }
-.btn1{
-    margin-top: 20px;
+.btn{
+    
     border-radius: 6px;
-    height: 40px;
-    border: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    background: #B20808;
+    text-decoration: none;
+    padding: 14px 20px;
+    background: #D90429;
     box-shadow: 0 2px 5px hsl(0, 0%, 14%);
-    cursor: pointer;
-    transition: 0.5s;
-    z-index: 1;
+    
     color: white;
 }
 
-.btn:hover {
-    background-color: #880000;
+.btn:hover, .btn-emergencia:hover{
+    background-color: #9c0202;
+    transition:0.5s;
 }
 
 main {
-    background-color: #FFF4EB;
+    background-color: #ffffff;
+ 
    
 }
 .container {
@@ -125,33 +104,119 @@ span{
     color: #B20808;
 }
 
-.conteudo{
-    margin-top: 100px;
-    margin-left: 60px;
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
 }
 
-.conteudo p{
-    margin-top: 20px;
+.texto {
+    width: 50%;
 }
+
+.texto h1 {
+    font-size: 50px;
+}
+
+.texto span {
+    color: #D90429;
+}
+
+.texto p {
+    margin: 20px 0;
+    color: #6B7280;
+    font-size: 18px;
+}
+
 
 .cards{
     display: flex;
     gap: 20px;
+    justify-content: center;
     
 }
 
-.card1 {
+.card {
     border-right-style: solid;
-    margin: 10px;
-    padding: 10px;
+    padding: 25px;
     border-right-width: 2px;
-
     border-right-color: #afafaf6c;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    
 }
-.card2{
-    margin: 10px;
-    padding: 10px;
+
+.secao {
+    padding: 80px 8%;
+    text-align: center;
 }
+
+.secao h2 {
+    color: #D90429;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #F5F5F5;
+    padding: 30px;
+    width: 200px;
+    border-radius: 12px;
+}
+.box p{
+    font-size: 14px;
+}
+.box a{
+    font-size: 14px;
+    color: #e90404;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.emergencia {
+    background: #FFE5E9;
+}
+
+/* DICAS */
+.dicas-lista {
+    list-style: none;
+}
+
+.dicas-lista li {
+    margin: 10px 0;
+}
+
+/* RODAPÉ */
+footer {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#quiz-section select,
+#quiz-section button {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+#quiz-section button {
+    background: #D90429;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 #p1{
     font-weight: bolder;
@@ -160,25 +225,11 @@ span{
 #p2{
     margin-top: 10px;
 }
-#bgimg{
-    width: 100%;
-    position: absolute;
-}
+
 #bgimg img{
-    max-width: 30%;
-    position:absolute;
-    display: inline-block;
-    right: 5%;
-    transform: translateY(-50%);
-    height: auto;
-    margin-top: -40px;
+    width: 500px;
+    border-radius: 15px;
+    
     
 }
-.faixa{
-    background-color: #ff0000;
-    margin-left: 0;
-    width: 100%;
-    display: flex;
-    height: 70px;
-    
-}
+

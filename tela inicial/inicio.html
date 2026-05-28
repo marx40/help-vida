@@ -17,58 +17,145 @@
 
              <div class="nav-bar">
 
-                <ul>
-                    <div class="items">
-                    <li ><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li ><a href="#">Guias</a></li>
-                    <li><a href="#">Emergências</a></li>
-                    <li><a href="#">Dicas</a></li>
-                    <li><a href="#">Contato</a></li>
-            </div>
+                <ul class="items">
+                    
+                    <li ><a href="#inicio">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li ><a href="#guias">Guias</a></li>
+                    <li><a href="#emergencias">Emergências</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
+                    
+        
                 </ul>
                     
                 </div>
-            <div class="btns">
-                <button class="btn">Emergência 192</button>
-            </div>
+                <a href="tel:192" class="btn-emergencia">Emergência </a>
+            
              
         </nav>
         
     </header>
 
     <main>
-        <div class="conteudo">
-            <h1>Conhecimento que <br> <span>salva vidas</span></h1>
-            <p>Aprenda primeiros socorros e esteja preparado <br> para agir em situações de emergência.</p>
+        <section class="conteudo" id="inicio">
+            <div class="texto">
+        <h1>Conhecimento que <br> <span>salva vidas</span></h1>
 
-            <button class="btn1">Guias de primeiros socorros</button>
+            <p>Aprenda primeiros socorros e esteja preparado <br> para agir em situações de emergência.</p>
+        
+            
+
+            <div class="btns">
+                <a href="#guias" class="btn">Guias de primeiros socorros</a>
+                <a href="#dicas" class="btn">Dicas Rápidas</a>
+            </div>
+            </div>
 
             <div id="bgimg">
-            <img src="/images/bgimage.jpeg" alt="">
+            <img src="/images/bgimage.jpeg" alt="Primeiros Socorros">
                 </div>
+            </section>
 
-            <div class="cards">
-                <div class="card1">
-                <p id="p1">Aprenda de forma fácil</p>
-                <p id="p2">Linguagem simples e <br> passo a passo prático</p>
-                </div>
-                
-                <div class="card2">
-                    <p id="p1">Esteja preparado</p>
-                    <p id="p2">Pequenas atitudes podem <br> fazer a grande diferença</p>
-                </div>
-                
-            </div>
-            
-            
+            <section class="cards">
+        <div class="card">
+            <h3>Aprenda</h3>
+            <p>Conteúdo simples e objetivo</p>
         </div>
 
-        <div class="faixa">
-                <h3>Emergência?</h3>
-                <p>Ligue para 192 imediatamente</p>
-            </div>
+        <div class="card">
+            <h3>Pratique</h3>
+            <p>Técnicas fundamentais</p>
+        </div>
 
+        <div class="card">
+            <h3>Salve vidas</h3>
+            <p>Esteja preparado para agir</p>
+        </div>
+    </section>
+
+    
+    <section id="sobre" class="secao">
+        <h2>Sobre</h2>
+        <p>
+            Nosso objetivo é ensinar noções básicas de primeiros socorros
+            para qualquer pessoa agir com segurança.
+        </p>
+    </section>
+            
+    <section id="guias" class="secao">
+        <h2>Guias</h2>
+
+        <div class="grid">
+            <div class="box">
+                <h4>Queimaduras</h4> <br>
+                <p>Como agir em casos de queimaduras leves e graves.</p> <br>
+                <a href="#queimadura">Ver guia</a>
+             </div>
+             <div class="box">
+                <h4>Queimaduras</h4> <br>
+                <p>Como agir em casos de queimaduras leves e graves.</p> <br>
+                <a href="#queimadura">Ver guia</a>
+             </div>
+             <div class="box">
+                <h4>Queimaduras</h4> <br>
+                <p>Como agir em casos de queimaduras leves e graves.</p> <br>
+                <a href="#queimadura">Ver guia</a>
+             </div>
+             <div class="box">
+                <h4>Queimaduras</h4> <br>
+                <p>Como agir em casos de queimaduras leves e graves.</p> <br>
+                <a href="#queimadura">Ver guia</a>
+             </div>
+             <div class="box">
+                <h4>Queimaduras</h4> <br>
+                <p>Como agir em casos de queimaduras leves e graves.</p> <br>
+                <a href="#queimadura">Ver guia</a>
+             </div>
+             <div class="box">
+                <h4>Queimaduras</h4> <br>
+                <p>Como agir em casos de queimaduras leves e graves.</p> <br>
+                <a href="#queimadura">Ver guia</a>
+             </div>
+            
+        </div>
+    </section>
+
+    <!-- EMERGÊNCIAS -->
+    <section id="emergencias" class="secao emergencia">
+        <h2>Números de Emergência</h2>
+
+        <p>🚑 SAMU: 192</p>
+        <p>🚒 Bombeiros: 193</p>
+        <p>👮 Polícia: 190</p>
+    </section>
+
+    <!-- DICAS -->
+    <section id="dicas" class="secao">
+        <h2>Dicas Rápidas</h2>
+
+        <ul class="dicas-lista">
+            <li>Mantenha a calma</li>
+            <li>Chame ajuda imediatamente</li>
+            <li>Proteja a vítima</li>
+            <li>Não faça procedimentos sem conhecimento</li>
+        </ul>
+    </section>
+
+    <section id="quiz-section" class="secao">
+    <h2>Quiz de Primeiros Socorros</h2>
+
+    <p>O que fazer em caso de engasgo?</p>
+
+    <select id="quiz">
+        <option value="">Escolha</option>
+        <option value="errada">Dar água imediatamente</option>
+        <option value="correta">Incentivar a tossir</option>
+        <option value="errada">Deitar a pessoa</option>
+    </select>
+
+    <button onclick="verificarResposta()">Responder</button>
+</section>
+       
         
 
         <div class="container">
