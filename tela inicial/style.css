@@ -63,26 +63,31 @@ nav{
 
 }
 
-.btn-emergencia{
+.btn-emergencia {
     border-radius: 8px;
     height: 40px;
     padding: 0.5rem 1rem;
     background: #D90429;
     box-shadow: 0 2px 5px hsl(0, 0%, 14%);
-    cursor: pointer;
     color: white;
     text-decoration: none;
+   
+    
     
 }
-.btn{
-    
-    border-radius: 6px;
+
+.btn1, .btn2 {
     text-decoration: none;
     padding: 14px 20px;
-    background: #D90429;
-    box-shadow: 0 2px 5px hsl(0, 0%, 14%);
-    
+    border-radius: 8px;
+}
+.btn1{
+    background: #D90429; 
     color: white;
+}
+.btn2 {
+    border: 2px solid #D90429;
+    color: #D90429;
 }
 
 .btn:hover, .btn-emergencia:hover{
@@ -170,8 +175,9 @@ span{
 .box {
     background: #F5F5F5;
     padding: 30px;
-    width: 200px;
+    width: 195px;
     border-radius: 12px;
+ 
 }
 .box p{
     font-size: 14px;
@@ -187,7 +193,7 @@ span{
     background: #FFE5E9;
 }
 
-/* DICAS */
+
 .dicas-lista {
     list-style: none;
 }
@@ -196,7 +202,7 @@ span{
     margin: 10px 0;
 }
 
-/* RODAPÉ */
+
 footer {
     background: #1f1f1f;
     color: white;
