@@ -6,6 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #ffffff;
@@ -57,24 +60,105 @@ nav{
     border-color: #B20808;
 }
 
+.secao-emergencia{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card-urgencia{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow:  0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 250px;
+    transition: 0.2s;
+}
+.card-urgencia:hover{
+    transform: translateY(-5px);
+}
+.card-urgencia h3{
+    margin: 0;
+    color: #333;
+}
+.card-urgencia .numero{
+    display: block;
+    font-size: 32px;
+    font-weight:bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+.card-urgencia p{
+    font-size: 14px;
+    color:#666;
+    min-height: 40px;
+}
+.btn-ligar{
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn-ligar:hover{
+    background-color: #c0392b;
+}
+ 
 .btns {
     display: flex;
     gap:15px;
 
 }
 
-.btn-emergencia {
-    border-radius: 8px;
-    height: 40px;
-    padding: 0.5rem 1rem;
+
+/* Cores dark*/
+#tema {
     background: #D90429;
-    box-shadow: 0 2px 5px hsl(0, 0%, 14%);
     color: white;
-    text-decoration: none;
-   
-    
-    
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
 }
+
+#tema:hover {
+    background: #a8001f;
+}
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark header {
+    background-color: #1e1e1e;
+}
+
+.dark nav a {
+    color: white;
+}
+
+.dark .box {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.dark footer {
+    background-color: black;
+}
+
+
+
+
+
 
 .btn1, .btn2 {
     text-decoration: none;
