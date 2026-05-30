@@ -10,24 +10,21 @@
 body {
     background-color: #ffffff;
     color: #1F1F1F;
-
 }
 
 header{
     width: 100%;
     background-color: #fff;
     padding: 25px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
     position: fixed;
-
-   
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #464646;
 }
 
-.logo {
-    color: #D90429;
-    font-size: 22px;
-    font-weight: bold;
-    
+main {
+    background-color: #ffffff;
 }
 
 nav{
@@ -35,20 +32,34 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
+
+.logo {
+    color: #D90429;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
 .items {
     list-style: none;
     display: flex;
     gap: 25px;
-    
+}
+
+.items li {
+    transition: 0.5s;
+}
+
+.items li:hover {
+    transform: translateY(-2px);
 }
 
 .items a {
     text-decoration: none;
     color: #1f1f1f;
     transition: 0.5s;
-    
 }
 
 .items a:hover {
@@ -71,23 +82,38 @@ nav{
     box-shadow: 0 2px 5px hsl(0, 0%, 14%);
     color: white;
     text-decoration: none;
-   
-    
-    
+    transition: 0.5s;
+}
+
+.btn-emergencia:hover {
+    transform: translateY(-2px);
 }
 
 .btn1, .btn2 {
     text-decoration: none;
     padding: 14px 20px;
     border-radius: 8px;
+    transition: 0.5s;
 }
+
 .btn1{
     background: #D90429; 
     color: white;
 }
+
+.btn1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 0 #D90429;
+}
+
 .btn2 {
     border: 2px solid #D90429;
     color: #D90429;
+}
+
+.btn2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 0 #D90429;
 }
 
 .btn:hover, .btn-emergencia:hover{
@@ -95,16 +121,10 @@ nav{
     transition:0.5s;
 }
 
-main {
-    background-color: #ffffff;
- 
-   
-}
 .container {
     display: inline;
     flex-wrap: wrap;
     align-items: center;
-    
 }
 
 span{
@@ -136,31 +156,44 @@ span{
     font-size: 18px;
 }
 
-
 .cards{
     display: flex;
     gap: 20px;
     justify-content: center;
-    
 }
 
 .card {
-    border-right-style: solid;
+    border-style: solid;
     padding: 25px;
-    border-right-width: 2px;
-    border-right-color: #afafaf6c;
+    border-width: 2px;
+    border-color: #D90429;
     border-radius: 12px;
     width: 250px;
     text-align: center;
-    
+    transition: 0.5s;
+    box-shadow: 0 0 10px 0 #383838
 }
 
-.secao {
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    color: #D90429;
+    font-size: 30px;
+}
+
+.card h3 {
+    gap: 25px;
+}
+
+.sessao {
     padding: 80px 8%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.secao h2 {
+.sessao h2 {
     color: #D90429;
     margin-bottom: 20px;
 }
@@ -177,11 +210,27 @@ span{
     padding: 30px;
     width: 195px;
     border-radius: 12px;
- 
+    transition: 0.5s;
+    border: 2px solid #c2c2c2; 
 }
+
+.box .icon {
+    color: #D90429;
+    font-size: 30px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #D90429;
+    box-shadow: 0 0 5px #e90404;
+}
+
 .box p{
     font-size: 14px;
 }
+
 .box a{
     font-size: 14px;
     color: #e90404;
@@ -190,9 +239,17 @@ span{
 }
 
 .emergencia {
-    background: #FFE5E9;
+    background: #D90429;
+    color: #fff;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    padding: 15px;
 }
 
+.emergencia h2 {
+    color: #fff;
+}
 
 .dicas-lista {
     list-style: none;
@@ -202,13 +259,6 @@ span{
     margin: 10px 0;
 }
 
-
-footer {
-    background: #1f1f1f;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
 #quiz-section select,
 #quiz-section button {
@@ -224,8 +274,6 @@ footer {
     cursor: pointer;
 }
 
-
-
 #p1{
     font-weight: bolder;
 }
@@ -237,7 +285,23 @@ footer {
 #bgimg img{
     width: 500px;
     border-radius: 15px;
-    
-    
 }
 
+.footer {
+    background-color: #25242e;
+    padding: 15px 20px;
+}
+
+.footer .sec {
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
