@@ -12,7 +12,8 @@ html{
 
 body {
     background-color: #ffffff;
-    color: #1F1F1F;
+    color: #222;
+    transition: 0.3s;
 }
 
 header{
@@ -23,7 +24,8 @@ header{
     position: fixed;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-color: #464646;
+    border-color: #46464619;
+     z-index: 1;
 }
 
 main {
@@ -35,6 +37,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .logo {
@@ -112,7 +115,7 @@ nav{
 }
 .btn-ligar{
     display: inline-block;
-    background-color: #e74c3c;
+    background-color: #D90429;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -120,7 +123,8 @@ nav{
     margin-top: 10px;
 }
 .btn-ligar:hover{
-    background-color: #c0392b;
+    background-color: #bb0221;
+    transition: 0.5s;
 }
  
 .btns {
@@ -130,29 +134,77 @@ nav{
 }
 
 
-/* Cores dark*/
-#tema {
+
+.menu{
+    position: relative;
+    margin-left: 20px;
+}
+#btnAcess {
     background: #D90429;
     color: white;
     border: none;
-    padding: 10px 14px;
-    border-radius: 8px;
+    padding: 10px 10px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+}
+#btnAcess button:hover {
+    background-color: #bb0221;
+    transition: 0.5s;
 }
 
-#tema:hover {
-    background: #a8001f;
+.menu-acess{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
 }
-.dark {
+.menu-acess button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-align:left;
+}
+.menu-acess button:hover{
+    background-color: #f5f5f5;
+}
+.hidden{
+    display:none;
+}
+/* Cores dark*/
+body.dark {
     background-color: #121212;
-    color: white;
+    color: #f5f5f5;
 }
 
-.dark header {
+body.dark header {
     background-color: #1e1e1e;
 }
-
+body.dark .menu {
+    background-color: #1e1e1e;
+}
+body.dark .texto p{
+    color: #d8d8d8
+}
+body.dark section, body.dark .card, body.dark.container {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+body.dark button {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+body.dark #menuAcess button:hover{
+    background-color: #555;
+}
 .dark nav a {
     color: white;
 }
@@ -253,7 +305,7 @@ span{
     width: 250px;
     text-align: center;
     transition: 0.5s;
-    box-shadow: 0 0 10px 0 #383838
+    box-shadow: 5px 4px 8px 0 #383838ae
 }
 
 .card:hover {
@@ -310,12 +362,12 @@ span{
 }
 
 .box p{
-    font-size: 14px;
+    font-size: auto;
 }
 
 .box a{
     font-size: 14px;
-    color: #e90404;
+    color: #D90429;
     font-weight: bold;
     text-decoration: none;
 }
@@ -354,6 +406,10 @@ span{
     color: white;
     border: none;
     cursor: pointer;
+}
+#quiz-section button:hover{
+    background-color: #bb0221;
+    transition: 0.5s;
 }
 
 #p1{

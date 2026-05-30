@@ -24,9 +24,17 @@
                     
              
                 
-                <button id="tema" class="dark" >
-                    Modo Escuro
-                </button>
+                <div class="menu">
+                    <button id="btnAcess" >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div id="menuAcess" class="menu-acess hidden">
+                        <button id="modoEscuro">Modo Escuro</button>
+                        <button id="aumentarFonte">A+</button>
+                        <button id="diminuirFonte">A-</button>
+                        <button id="resetar">Resetar</button>
+                    </div>
+                </div>
             
         </nav>
         
@@ -72,13 +80,6 @@
         </div>
     </section>
  
-    <section id="sobre" class="sessao">
-        <h2>Sobre</h2>
-        <p>
-            Nosso objetivo é ensinar noções básicas de primeiros socorros
-            para qualquer pessoa agir com segurança.
-        </p>
-    </section>
             
     <section id="guias" class="sessao">
         <h2>Guias</h2>
@@ -136,6 +137,7 @@
         <div class="container-cards">
             <div class="card-urgencia samu">
                 <h3>SAMU</h3>
+                <span class="numero">192</span>
                 <p>Casos de urgência médica e traumas.</p>
                 <a href="tel:192" class="btn-ligar">Chamar Agora</a>
             </div>
@@ -153,10 +155,6 @@
             </div>
 
         </div>
-
-        <p> SAMU: 192</p>
-        <p> Bombeiros: 193</p>
-        <p> Polícia: 190</p>
 
         <ul class="dicas-lista">
             <li>Mantenha a calma</li>
@@ -192,5 +190,6 @@
         
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
