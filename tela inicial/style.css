@@ -217,8 +217,32 @@ body.dark #menuAcess button:hover{
 .dark footer {
     background-color: black;
 }
-
-
+/*contraste
+body.contraste{
+    background-color: #0a0a0a;
+    color:#ffffff;
+}
+body.contraste header, body.contraste nav, body.contraste .menu {
+    background-color: #111;
+}
+body.contraste h1, body.contraste h2, body.contraste h3{
+    color:#ff4d4d;
+}
+body.contraste button, body.contraste a{
+    background-color: transparent;
+    color:#fff;
+    border: 2px solid#ff4d4d;
+}
+body.contraste button:hover, body.contraste a:hover{
+    background-color: #ff4d4d;
+    color: #fff;
+}
+body.contraste .card, body.contraste section {
+    background-color: #181818;
+    border: 2px solid #ff4d4d;
+    color: #fff;
+}
+*/
 
 
 

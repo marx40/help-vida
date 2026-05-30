@@ -8,7 +8,7 @@ btnAcess.addEventListener("click", function (){
 // modo escuro
 document.getElementById("modoEscuro").addEventListener("click", function(){
     document.body.classList.toggle("dark");
-})
+});
 // aumentar fonte
 document.getElementById("aumentarFonte").addEventListener("click", function(){
     if( tamanhoFonte <=20 ){
@@ -24,4 +24,7 @@ document.getElementById("diminuirFonte").addEventListener("click", function(){
     document.body.style.fontSize = tamanhoFonte + "px";
     }
     
+});
+document.getElementById("altoContraste").addEventListener("click", function(){
+    document.body.classList.toggle("contraste");
 });
