@@ -133,7 +133,54 @@ nav{
 
 }
 
+.card-dica{
+    background: linear-gradient(to bottom, #D90429, #ff9090);
+    width: 450px;
+    min-height: 250px;
+    padding: 25px; 
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: auto;  
+}
+.secao-dica{
+    text-align: center;
+    padding: 40px 20px;  
+    
+}
+.secao-dica h2{
+    color: #D90429;
+    margin-bottom: 20px;
+}
+#dicaTexto {
+    padding: 20px;
+    background-color: #fff;
+    color: #8b1e1e;
+    border-radius: 12px;
+    width: 85%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+#btnDica{
+    padding:  12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#icon-dica{
+    color: #f8de18;
+    font-size: 25px;
 
+}
 
 .menu{
     position: relative;
@@ -345,13 +392,13 @@ span{
     gap: 25px;
 }
 
-.sessao {
+.secao {
     padding: 80px 8%;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.sessao h2 {
+.secao h2 {
     color: #D90429;
     margin-bottom: 20px;
 }
