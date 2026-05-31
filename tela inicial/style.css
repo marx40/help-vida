@@ -516,14 +516,6 @@ span{
     transition: 0.5s;
 }
 
-#p1{
-    font-weight: bolder;
-}
-
-#p2{
-    margin-top: 10px;
-}
-
 #bgimg img{
     width: 500px;
     border-radius: 15px;
