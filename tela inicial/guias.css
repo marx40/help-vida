@@ -16,10 +16,12 @@ body {
     color: #222;
     transition: 0.3s;
    
+
 }
 main{
     padding-top: 40px;
 }
+
 header{
     width: 100%;
     background-color: #fff;
@@ -32,16 +34,21 @@ header{
     border-bottom-width: 1px;
     border-color:#c2c2c2;
 }
+
 nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   position: static;
+    position: static;
 }
+
 section{
     margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
 }
+
 h1,h2{
     margin-bottom: 20px;
 }
