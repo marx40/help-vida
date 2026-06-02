@@ -43,12 +43,22 @@ nav{
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+.title {
     color: #D90429;
     font-size: 22px;
     font-weight: bold;
+    line-height: 1;
 }
-
-
 
 .items {
     list-style: none;
@@ -375,11 +385,14 @@ span{
 }
 
 .texto {
-    width: 50%;
+    flex: 1;
+    max-width: 600px;
 }
 
 .texto h1 {
-    font-size: 50px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 .texto span {
@@ -517,9 +530,17 @@ span{
     transition: 0.5s;
 }
 
+#bgimg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 #bgimg img{
-    width: 500px;
+    width: 100%;
+    max-width: 550px;
     border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .footer {
