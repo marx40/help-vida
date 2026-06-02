@@ -1,0 +1,129 @@
+.menu{
+    position: relative;
+    margin-left: 20px;
+}
+
+#btnAcess {
+    background: #D90429;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btnAcess button:hover {
+    background-color: #bb0221;
+    transition: 0.5s;
+}
+
+.menu-acess{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu-acess button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-align:left;
+}
+
+.menu-acess button:hover{
+    background-color: #f5f5f5;
+}
+
+.hidden{
+    display:none;
+}
+
+/* Cores dark*/
+body.dark {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark header {
+    background-color: #1e1e1e;
+}
+body.dark .menu {
+    background-color: #1e1e1e;
+}
+body.dark .texto p{
+    color: #d8d8d8
+}
+body.dark section, body.dark .card, body.dark.container {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+body.dark button {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+body.dark #menuAcess button:hover{
+    background-color: #555;
+}
+.dark nav a {
+    color: white;
+}
+
+.dark .box {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.dark footer {
+    background-color: black;
+}
+
+/*contraste*/
+body.contraste{
+    background-color: #0a0a0a;
+    color:#ffffff;
+}
+body.contraste header, body.contraste nav, body.contraste .menu {
+    background-color: #111;
+}
+body.contraste h1, body.contraste h2, body.contraste h3{
+    color:#ff4d4d;
+}
+body.contraste button, body.contraste a{
+    background-color: transparent;
+    color:#fff;
+    border: 2px solid#ff4d4d;
+}
+body.contraste button:hover, body.contraste a:hover{
+    background-color: #ff4d4d;
+    color: #fff;
+}
+body.contraste .card, body.contraste section {
+    background-color: #181818;
+    border: 2px solid #ff4d4d;
+    color: #fff;
+}
+body.contraste .box, body.contraste a {
+    color: #ffffff;
+    background-color: #181818;
+}
+body.contraste .menu-acess {
+    background-color: #181818;
+}
+body.contraste .card-urgencia, body.contraste .card-urgencia p{
+    background-color: #181818;
+    color: #fff;
+}
+body.contraste .footer, body.contraste .sec{
+    background-color: #111;
+    color: #fff;
+}

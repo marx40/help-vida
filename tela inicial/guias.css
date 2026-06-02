@@ -14,8 +14,8 @@ html{
 body {
     background-color: #ffffff;
     color: #222;
-    transition: 0.3s;
-   
+    transition: 0.3s;   
+    
 }
 main{
     padding-top: 40px;
@@ -39,9 +39,27 @@ nav{
     align-items: center;
    position: static;
 }
+.conteudos{
+    text-align: justify;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
 section{
     margin-bottom: 30px;
+    margin: 20px;
+    text-align: justify;
+    text-indent: 30px;
 }
-h1,h2{
+section p {
+    margin-bottom: 20px;
+}
+ul{
+    list-style-position: inside;
+    
+}
+
+h1,h2,h3{
     margin-bottom: 20px;
 }
