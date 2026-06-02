@@ -42,9 +42,21 @@ nav{
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+.title {
     color: #D90429;
     font-size: 22px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .items {

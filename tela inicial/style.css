@@ -15,7 +15,6 @@ body {
     background-color: #ffffff;
     color: #222;
     transition: 0.3s;
-
 }
 
 header{
@@ -24,7 +23,6 @@ header{
     padding: 25px;
     box-shadow: 0 0 10px 0 #555;
     position: static;
-    
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color:#c2c2c2;
@@ -39,7 +37,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 .logo {
