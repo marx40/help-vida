@@ -548,13 +548,50 @@ span{
 .footer .sec {
     color: #616161;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex: row;
     gap: 20px;
+}
+
+.footer .main-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    border-right: 2px solid #414141;
 }
 
 .footer .brand {
     font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer .brand-text {
+    width: 300px;
+    text-align: justify;
+}
+
+.footer .nav-text {
+    display: flex;
+    flex: column;
+    gap: 15px;
+}
+
+.footer .nav-footer {
+    display: flex;
+}
+
+.footer ul {
+    list-style: none;
+    gap: 15px;
+}
+
+.footer .copy {
+    display: flex;
+    flex: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #616161;
+    margin-left: auto;
 }
