@@ -15,8 +15,10 @@ body {
     background-color: #ffffff;
     color: #222;
     transition: 0.3s;
+    max-height: 1450px;
 }
 
+/*Cabeçalho*/
 header{
     width: 100%;
     background-color: #fff;
@@ -46,8 +48,8 @@ nav{
 }
 
 .logo-img {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
 }
 
 .title {
@@ -83,6 +85,123 @@ nav{
     border-color: #B20808;
 }
 
+/*Sessão Principal*/
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 25px;
+}
+
+.texto {
+    flex: 1;
+    max-width: 600px;
+}
+
+.texto h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.texto span {
+    color: #D90429;
+}
+
+.texto p {
+    margin: 20px 0;
+    color: #6B7280;
+    font-size: 18px;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #bb0221;
+    padding: 25px 30px;
+}
+
+.card {
+    border-style: solid;
+    padding: 25px;
+    border-width: 2px;
+    border-color: #D90429;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 250px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 5px 4px 8px 0 #383838ae
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    color: #D90429;
+    font-size: 30px;
+}
+
+.card h3 {
+    gap: 25px;
+}
+
+/*Guias*/
+.secao {
+    padding: 80px 8%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.secao h2 {
+    color: #D90429;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #F5F5F5;
+    padding: 30px;
+    width: 195px;
+    border-radius: 12px;
+    transition: 0.5s;
+    border: 2px solid #c2c2c2; 
+}
+
+.box .icon {
+    color: #D90429;
+    font-size: 30px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #D90429;
+    box-shadow: 0 0 5px #e90404;
+}
+
+.box p{
+    font-size: auto;
+}
+
+.box a{
+    font-size: 14px;
+    color: #D90429;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Números de Emergência*/
 .secao-emergencia{
     text-align: center;
     padding: 40px 20px;
@@ -165,7 +284,7 @@ nav{
 
 .secao-dica{
     text-align: center;
-    padding: 40px 20px;  
+    padding: 40px 20px;
 }
 
 .secao-dica h2{
@@ -188,13 +307,19 @@ nav{
 }
 
 #btnDica{
-    padding:  12px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 8px;
     background: #D90429;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+#btnDica:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 5px #686868
 }
 
 #icon-dica{
@@ -221,6 +346,12 @@ nav{
 #btnAcess button:hover {
     background-color: #bb0221;
     transition: 0.5s;
+}
+
+.qe {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
 }
 
 .menu-acess{
@@ -375,119 +506,7 @@ span{
     color: #B20808;
 }
 
-.conteudo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 8%;
-    gap: 25px;
-}
 
-.texto {
-    flex: 1;
-    max-width: 600px;
-}
-
-.texto h1 {
-    font-size: 3.5rem;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.texto span {
-    color: #D90429;
-}
-
-.texto p {
-    margin: 20px 0;
-    color: #6B7280;
-    font-size: 18px;
-}
-
-.cards{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    background-color: #bb0221;
-    padding: 25px 30px;
-}
-
-.card {
-    border-style: solid;
-    padding: 25px;
-    border-width: 2px;
-    border-color: #D90429;
-    border-radius: 12px;
-    background-color: #fff;
-    width: 250px;
-    text-align: center;
-    transition: 0.5s;
-    box-shadow: 5px 4px 8px 0 #383838ae
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card .icon {
-    color: #D90429;
-    font-size: 30px;
-}
-
-.card h3 {
-    gap: 25px;
-}
-
-.secao {
-    padding: 80px 8%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.secao h2 {
-    color: #D90429;
-    margin-bottom: 20px;
-}
-
-.grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.box {
-    background: #F5F5F5;
-    padding: 30px;
-    width: 195px;
-    border-radius: 12px;
-    transition: 0.5s;
-    border: 2px solid #c2c2c2; 
-}
-
-.box .icon {
-    color: #D90429;
-    font-size: 30px;
-}
-
-.box:hover {
-    transform: translateY(-5px);
-    border-style: solid;
-    border-width: 2px;
-    border-color: #D90429;
-    box-shadow: 0 0 5px #e90404;
-}
-
-.box p{
-    font-size: auto;
-}
-
-.box a{
-    font-size: 14px;
-    color: #D90429;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .emergencia {
     background: #D90429;
