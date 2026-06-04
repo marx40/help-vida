@@ -17,9 +17,7 @@ body {
     transition: 0.3s;   
     
 }
-main{
-    padding-top: 40px;
-}
+
 
 header{
     width: 100%;
@@ -57,13 +55,21 @@ section{
 section p {
     margin-bottom: 20px;
 }
-ul{
+ul,ol{
     list-style-position: inside;
     
 }
 
-h1,h2,h3{
+h1,h2{
     margin-bottom: 20px;
     text-align: center;
     align-items: center;
+}
+h1{
+    background-color: #D90429;
+    color: #fff;
+}
+h4{
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
