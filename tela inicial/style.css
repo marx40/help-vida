@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     box-sizing: border-box;
 }
 
@@ -148,12 +148,13 @@ nav{
 }
 
 .card-dica{
-    background: linear-gradient(to bottom, #e72949, #ff9090);
+    background: #c2c2c2;
     width: 450px;
     min-height: 250px;
     padding: 25px; 
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 2px solid #acacac;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -165,7 +166,6 @@ nav{
 .secao-dica{
     text-align: center;
     padding: 40px 20px;  
-    
 }
 
 .secao-dica h2{
@@ -191,6 +191,8 @@ nav{
     padding:  12px 20px;
     border: none;
     border-radius: 8px;
+    background: #D90429;
+    color: #fff;
     cursor: pointer;
     font-size: 16px;
 }
@@ -540,58 +542,146 @@ span{
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+/*Rodapé*/
 .footer {
     background-color: #25242e;
-    padding: 15px 20px;
+    color: #d1d1d1;
+    padding: 40px 8%;
 }
 
 .footer .sec {
-    color: #616161;
     display: flex;
-    flex: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .footer .main-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 20px;
-    border-right: 2px solid #414141;
+    flex: 2;
+    min-width: 280px;
+    padding-right: 25px;
+    border-right: 1px solid #414141;
 }
 
 .footer .brand {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .footer .brand-text {
-    width: 300px;
+    max-width: 500px;
+    line-height: 1.6;
     text-align: justify;
 }
 
-.footer .nav-text {
-    display: flex;
-    flex: column;
-    gap: 15px;
-}
-
 .footer .nav-footer {
+    flex: 1;
+    min-width: 180px;
     display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+    border-right: 1px solid #414141;
 }
 
-.footer ul {
+.footer .nav-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .footer-items {
     list-style: none;
-    gap: 15px;
+}
+
+.footer .footer-items li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-items a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+.footer .footer-items a:hover {
+    color: #D90429;
+}
+
+.footer .guias-footer {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+    border-right: 1px solid #414141;
+}
+
+.footer .guias-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .guias-items {
+    list-style: none;
+}
+
+.footer .guias-items li {
+    margin-bottom: 10px;
+}
+
+.footer .guias-items a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+.footer .guias-items a:hover {
+    color: #D90429;
+}
+
+.footer .emergencia-footer {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+    border-right: 1px solid #414141;
+}
+
+.footer .emergencia-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .emergencia-items {
+    list-style: none;
+}
+
+.footer .emergencia-items li {
+    margin-bottom: 10px;
+}
+
+.footer .emergencia-items a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+.footer .emergencia-items a:hover {
+    color: #D90429;
 }
 
 .footer .copy {
-    display: flex;
-    flex: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #616161;
-    margin-left: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #414141;
+    color: #9a9a9a;
 }
