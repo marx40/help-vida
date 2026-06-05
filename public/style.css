@@ -24,7 +24,9 @@ header{
     background-color: #fff;
     padding: 25px;
     box-shadow: 0 0 10px 0 #555;
-    position: static;
+    position: static !important;
+    top: 0;
+    z-index: 9999;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color:#c2c2c2;
