@@ -191,16 +191,20 @@
     <section id="quiz-section" class="secao">
     <h2>Quiz de Primeiros Socorros</h2>
 
-    <p>O que fazer em caso de engasgo?</p>
+    <p id="pergunta">O que fazer em caso de engasgo?</p>
 
     <select id="quiz">
         <option value="">Escolha</option>
-        <option value="errada">Dar água imediatamente</option>
-        <option value="correta">Incentivar a tossir</option>
-        <option value="errada">Deitar a pessoa</option>
+        <option id="opcao1" value="errada">Dar água imediatamente</option>
+        <option id="opcao2" value="correta">Incentivar a tossir</option>
+        <option id="opcao3" value="errada">Deitar a pessoa</option>
     </select>
-
-    <button onclick="verificarResposta()">Responder</button>
+    <p id="resultado"></p>
+    <p > Acertos: <span id="contadorAcertos">0</span>/7
+    </p>
+    <button id="btnResponder" onclick="verificarResposta()">Responder</button>
+    <button id="proximo" onclick="proximo()">Próximo</button>
+    <button id="btnInicio" onclick="voltar()">Voltar ao início</button>
 </section>
 
 </section>
@@ -267,6 +271,7 @@
     </footer>
     
     <script src="script.js"></script>
+   
 
 </body>
 </html>
