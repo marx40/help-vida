@@ -28,6 +28,8 @@ document.getElementById("diminuirFonte").addEventListener("click", function(){
 document.getElementById("altoContraste").addEventListener("click", function(){
     document.body.classList.toggle("contraste");
 });
+
+
 let lendo = false;
 
 document.getElementById("lerPagina").addEventListener("click", function(){
@@ -35,8 +37,10 @@ document.getElementById("lerPagina").addEventListener("click", function(){
         speechSynthesis.cancel();
         lendo = false;
     } else{
-        const fala = new SpeechSynthesisUtterance(document.body.innerText);
-        fala.lang = "pt-BR"
+        const textoLimpo = document.body.innerText || document.body.textContent;
+        const fala = new SpeechSynthesisUtterance(textoLimpo);
+
+    
         speechSynthesis.speak(fala);
         lendo = true;
     }
