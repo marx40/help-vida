@@ -43,8 +43,9 @@ nav{
 }
 
 .container{
-    margin: 20px;
-    
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
         h1 {
@@ -61,7 +62,7 @@ nav{
             margin-bottom: 15px;
         }
 
-        p {    
+        .container p {    
             color: #555;
             margin-bottom: 15px;
         }

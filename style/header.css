@@ -134,3 +134,155 @@ nav{
 .hidden {
     display: none;
 }
+
+.footer {
+    background: #25242e;
+    color: #d1d1d1;
+    padding: 50px 8% 20px;
+}
+
+.footer a:hover {
+    color: #D90429;
+}
+.footer .sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer .main-footer {
+    flex: 2;
+    min-width: 280px;
+    padding-right: 25px;
+    border-right: 1px solid #414141;
+}
+
+.footer .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .brand-text {
+    max-width: 500px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer .nav-footer {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+    border-right: 1px solid #414141;
+}
+
+.footer .nav-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .footer-items {
+    list-style: none;
+}
+
+.footer .footer-items li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-items a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+.footer .footer-items a:hover {
+    color: #D90429;
+}
+
+.footer .guias-footer {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+    border-right: 1px solid #414141;
+}
+
+.footer .guias-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .guias-items {
+    list-style: none;
+}
+
+.footer .guias-items li {
+    margin-bottom: 10px;
+}
+
+.footer .guias-items a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+.footer .guias-items a:hover {
+    color: #D90429;
+}
+
+.footer .emergencias-footer {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+}
+
+.footer .emergencia-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .emergencia-items {
+    list-style: none;
+}
+
+.footer .emergencia-items li {
+    margin-bottom: 10px;
+}
+
+.footer .emergencia-items a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+.footer .emergencia-items a:hover {
+    color: #D90429;
+}
+
+.footer .sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer .copy {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #414141;
+    color: #9a9a9a;
+}

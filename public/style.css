@@ -15,7 +15,6 @@ body {
     background-color: #ffffff;
     color: #222;
     transition: 0.3s;
-    max-height: 1450px;
 }
 
 /*Cabeçalho*/
@@ -483,11 +482,14 @@ span{
 
 /*Rodapé*/
 .footer {
-    background-color: #25242e;
+    background: #25242e;
     color: #d1d1d1;
-    padding: 40px 8%;
+    padding: 50px 8% 20px;
 }
 
+.footer a:hover {
+    color: #D90429;
+}
 .footer .sec {
     display: flex;
     flex-wrap: wrap;
@@ -615,18 +617,13 @@ span{
 .footer .emergencia-items a:hover {
     color: #D90429;
 }
-.footer .sec {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .footer .main-footer,
-    .footer .nav-footer,
-    .footer .guias-footer,
-    .footer .emergencias-footer {
-        border-right: none;
-        padding-right: 0;
-    }
+.footer .sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
 
 .footer .copy {
     text-align: center;
@@ -717,6 +714,7 @@ body.contraste .footer, body.contraste .sec{
     color: #fff;
 }
 
+/*Responsivo*/
 @media (max-width: 780px) {
 
     nav {
@@ -804,5 +802,21 @@ body.contraste .footer, body.contraste .sec{
         background-color: #ccc; cursor: not-allowed; opacity: 0.6;
     }
 
-    
+    .footer .sec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .main-footer,
+    .footer .nav-footer,
+    .footer .guias-footer,
+    .footer .emergencias-footer {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .footer .brand-text {
+        max-width: 100%;
+        text-align: center;
+    }
 }
