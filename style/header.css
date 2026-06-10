@@ -39,7 +39,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 .logo {
@@ -131,8 +130,8 @@ nav{
     background-color: #f5f5f5;
 }
 
-.hidden {
-    display: none;
+.hidden{
+    display:none;
 }
 
 .footer {
