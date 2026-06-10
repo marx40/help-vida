@@ -62,7 +62,7 @@ body.dark .menu {
 body.dark .texto p{
     color: #d8d8d8
 }
-body.dark section, body.dark .card, body.dark.container {
+body.dark section, body.dark .card, body.dark.container, body.dark main {
     background-color: #1a1a1a;
     color: #fff;
 }
@@ -87,7 +87,16 @@ body.dark #menuAcess button:hover{
     background-color: black;
 }
 
+.dark h4 {
+    color: #ff4d4d;
+}
+body.dark .container p{
+    color: #fff;
+}
+
+
 /*contraste*/
+
 body.contraste{
     background-color: #0a0a0a;
     color:#ffffff;
@@ -95,8 +104,11 @@ body.contraste{
 body.contraste header, body.contraste nav, body.contraste .menu {
     background-color: #111;
 }
-body.contraste h1, body.contraste h2, body.contraste h3{
+ body.contraste h2, body.contraste h3{
     color:#ff4d4d;
+}
+body.contraste h1{
+    color: #ffffff;
 }
 body.contraste button, body.contraste a{
     background-color: transparent;
@@ -107,7 +119,7 @@ body.contraste button:hover, body.contraste a:hover{
     background-color: #ff4d4d;
     color: #fff;
 }
-body.contraste .card, body.contraste section {
+body.contraste .card, body.contraste section, body.contraste main {
     background-color: #181818;
     border: 2px solid #ff4d4d;
     color: #fff;
@@ -125,5 +137,14 @@ body.contraste .card-urgencia, body.contraste .card-urgencia p{
 }
 body.contraste .footer, body.contraste .sec{
     background-color: #111;
+    color: #fff;
+}
+body.contraste h4 {
+    color: #ff4d4d;
+}
+body.contraste p{
+    color: #fff;
+}
+body.contraste section p{
     color: #fff;
 }
