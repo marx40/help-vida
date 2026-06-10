@@ -94,9 +94,10 @@ nav {
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
 }
 
-#btnAcess button:hover {
+#btnAcess:hover {
     background-color: #bb0221;
     transition: 0.5s;
 }

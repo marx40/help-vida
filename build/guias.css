@@ -7,20 +7,6 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #ffffff;
-    color: #222;
-    transition: 0.3s;   
-}
-
-main{
-    padding-top: 40px;
-}
-
 .conteudos{
     max-width: 1000px;
     margin: 0 auto;
