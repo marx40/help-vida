@@ -615,6 +615,18 @@ span{
 .footer .emergencia-items a:hover {
     color: #D90429;
 }
+.footer .sec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .main-footer,
+    .footer .nav-footer,
+    .footer .guias-footer,
+    .footer .emergencias-footer {
+        border-right: none;
+        padding-right: 0;
+    }
 
 .footer .copy {
     text-align: center;
@@ -792,16 +804,5 @@ body.contraste .footer, body.contraste .sec{
         background-color: #ccc; cursor: not-allowed; opacity: 0.6;
     }
 
-    .footer .sec {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer .main-footer,
-    .footer .nav-footer,
-    .footer .guias-footer,
-    .footer .emergencias-footer {
-        border-right: none;
-        padding-right: 0;
-    }
+    
 }
