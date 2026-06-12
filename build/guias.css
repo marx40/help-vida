@@ -44,3 +44,34 @@ h4{
     border-left: 4px solid #D90429;
     padding-left: 10px;
 }
+
+/*Responsivo*/
+
+@media (max-width: 768px) {
+
+    .conteudos {
+        padding: 20px 20px;
+    }
+
+    section {
+        margin-bottom: 35px;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+    }
+
+    h1 {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-top: 25px;
+    }
+
+    h4 {
+        margin: 15px 0 8px 0;
+    }
+
+}

@@ -712,7 +712,7 @@ body.contraste .footer, body.contraste .sec{
 }
 
 /*Responsivo*/
-@media (max-width: 780px) {
+@media (max-width: 768px) {
 
     nav {
         flex-direction: column;

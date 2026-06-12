@@ -97,7 +97,7 @@ nav {
     transition: 0.3s;
 }
 
-#btnAcess:hover {
+#btnAcess button:hover {
     background-color: #bb0221;
     transition: 0.5s;
 }
@@ -127,8 +127,8 @@ nav {
     background-color: #f5f5f5;
 }
 
-.hidden {
-    display: none;
+.hidden{
+    display:none;
 }
 
 .footer {
@@ -281,4 +281,37 @@ nav {
     padding-top: 20px;
     border-top: 1px solid #414141;
     color: #9a9a9a;
+}
+
+/*Responsivo*/
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer .sec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .main-footer,
+    .footer .nav-footer,
+    .footer .guias-footer,
+    .footer .emergencias-footer {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .footer .brand-text {
+        max-width: 100%;
+        text-align: center;
+    }
 }
